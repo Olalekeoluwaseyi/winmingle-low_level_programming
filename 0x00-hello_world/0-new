@@ -1,0 +1,11 @@
+#!/bin/bash
+##eck if the CFILE variable is set before proceeding
+if [ -z "$CFILE" ]; then
+    echo "Error: The CFILE variable must be set (e.g., export CFILE=main.c)" >&2
+	    exit 1
+		fi
+
+		# The -E flag tells gcc to run only the preprocessor.
+		# By default, the output goes to standard output (stdout).
+		# We use '>' to redirect stdout into the specified file 'c'.
+		gcc -E "$CFILE" > c
