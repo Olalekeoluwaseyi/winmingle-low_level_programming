@@ -1,0 +1,19 @@
+/**
+
+ * Author: Olaleke Oluwaseyi Hezekiah
+
+ * Program: WinMingle Community C Training
+
+ * Description: 
+
+ */
+#include <stdio.h>
+
+int main(){
+    for (int i = 0; i < 10; i++){
+        printf("%d", i);
+    }
+    putchar('\n');
+    return 0;
+
+}
